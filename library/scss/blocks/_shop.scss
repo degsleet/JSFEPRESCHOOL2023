@@ -1,0 +1,22 @@
+.shop {
+    padding: 20px 0 40px;
+}
+
+.shop__title {
+    margin-bottom: 61px;
+}
+
+.shop__subtitle {
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+
+}
+
+.shop__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop__item-menu--deserts {
+    text-align: end;
+}

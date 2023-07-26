@@ -1,0 +1,44 @@
+.menu__title {
+    margin-bottom: 40px;
+    color: $beige;
+    font-family: $font-secondary;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.menu__list {
+    list-style: none;
+    
+    display: flex;
+    flex-flow: column;
+    row-gap: 40px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 2px;
+
+    text-transform: capitalize;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.menu-item__line {
+    background-color: $beige;
+    width: 100px;
+    height: 1px;
+}
+
+.menu-item__name {
+    flex-grow: 1;
+}
+
+.menu-item__price {
+    font-family: $font-secondary;
+}

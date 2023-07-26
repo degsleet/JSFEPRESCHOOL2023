@@ -1,0 +1,43 @@
+.slider {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.slider__pagination {
+    display: flex;
+    // gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.slider__btn {
+    height: 26px;
+    width: 26px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    &-app {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $dark-gray;
+
+        &--active {
+        background-color: $beige;
+
+            
+        }
+        &:hover {
+            transition: all 0.2s ease-in;
+    
+            background-color: $beige;
+        }
+    }
+    
+}
