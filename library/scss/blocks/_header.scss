@@ -1,0 +1,34 @@
+.header .container {
+    background-color: $dark-bg;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__nav {
+    display: flex;
+    column-gap: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.header__login {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__login:hover .svg-change {
+    fill: $beige;
+    transition: fill 0.2s ease-in;
+}
+

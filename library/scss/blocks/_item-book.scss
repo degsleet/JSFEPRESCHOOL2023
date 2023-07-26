@@ -1,0 +1,56 @@
+.item-book__staff {
+    font-family: $font-secondary;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 60px;
+        background-color: $beige;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.item-book__title {
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2.66;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.item-book__desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: auto;
+    width: 355px;
+}
+
+.item-book__btn {
+    padding: 9px 27px;
+    font-size: 10px;
+    margin-top: auto;
+
+    &--disabled {
+        cursor: default;
+        color: $beige;
+        border: 1px solid $beige;
+    }
+}

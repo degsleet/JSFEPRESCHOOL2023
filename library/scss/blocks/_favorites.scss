@@ -1,0 +1,88 @@
+.favorites {
+    padding: 20px 0 40px;
+}
+
+.favorites__title {
+    margin-bottom: 62px;
+}
+
+.favorites__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 41px;
+}
+
+.favorites__seasons {
+    display: flex;
+    column-gap: 93px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 38px;
+}
+
+.favorites__seasons label {
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    margin: -5px;
+    gap: 20px;
+}
+
+.favorites__seasons input:checked + label {
+    text-shadow:
+        0.6px 0px 0px #212121,
+        -0.6px 0px 0px #212121;
+}
+
+.favorites__seasons input {
+    display: none;
+}
+
+.favorites__seasons label::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: url("./../img/icons/radio.svg") 0 0 no-repeat;
+}
+
+.favorites__seasons input:checked + label::before {
+    background: url("./../img/icons/radio-checked.svg") 0 0 no-repeat;
+}
+
+.favorites__seasons .input + label {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+}
+
+.favorites__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 260px;
+}
+
+.favorites__item {
+    position: relative;
+
+    padding: 16px 20px 13px 19px;
+    border: 1px solid $black;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    min-height: 555px;
+    width: 550px;
+    box-sizing: border-box;
+
+    img {
+        position: absolute;
+        bottom: -1px;
+        right: -40px;
+    }
+}
